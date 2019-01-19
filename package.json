@@ -1,0 +1,26 @@
+{
+  "name": "test-api",
+  "version": "1.0.0",
+  "description": "personalapi",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrispykan/test-api.git"
+  },
+  "author": "chrispykan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrispykan/test-api/issues"
+  },
+  "homepage": "https://github.com/chrispykan/test-api#readme",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.12",
+    "mongoose": "^5.4.5"
+  }
+}
