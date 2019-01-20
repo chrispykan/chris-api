@@ -1,5 +1,6 @@
+.gitignore
+
 .env
-node_modules
 config.js
 node_modules
 bundle.js
@@ -8,6 +9,7 @@ yarn-debug.log
 .DS_Store
 build
 coverage
+
 
 # IntelliJ
 *.iml
