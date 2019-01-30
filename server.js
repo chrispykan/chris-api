@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var db = require('./db');
-var UserController = require('./user/UserController');
+var UserController = require('./controllers/userController')
 var port = process.env.PORT || 3000;
 var MONGODB_URI = process.env.MONGODB_URI;
 var server = app.listen(port, function() {
@@ -13,14 +13,5 @@ app.use('/users', UserController);
 
 require('dotenv').config();
 
+
 module.exports = app;
-
-
-
-
-
-
-
-
-
-

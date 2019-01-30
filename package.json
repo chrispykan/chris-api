@@ -19,11 +19,15 @@
   "homepage": "https://github.com/chrispykan/test-api#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-router": "0.0.1",
+    "jsonwebtoken": "^8.4.0",
     "mongodb": "^3.1.12",
     "mongoose": "^5.4.5",
-    "npm": "^6.6.0"
+    "mongoose-unique-validator": "^2.0.2",
+    "nodemon": "^1.18.9",
+    "npm": "^6.7.0"
   }
 }
