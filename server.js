@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var db = require('./db');
+var db = require('./models/db');
 var UserController = require('./controllers/userController')
 var port = process.env.PORT || 3000;
 var MONGODB_URI = process.env.MONGODB_URI;
