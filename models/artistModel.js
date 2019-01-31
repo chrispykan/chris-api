@@ -3,11 +3,11 @@ var Schema = mongoose.Schema;
 
 
 var artistSchema = new Schema({
-  Name: String,
-  Style: String,
-  Medium: String,
-  Country: String,
-  Site: String 
+  name: String,
+  style: String,
+  medium: String,
+  country: String,
+  site: String 
 });
 
 module.exports = mongoose.model('Artist', artistSchema);

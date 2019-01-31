@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
-var db = require('./models/db');
-var UserController = require('./controllers/userController')
+// var db = require('./models/db');
+var db = require('./models/index');
+
 var port = process.env.PORT || 3000;
 var MONGODB_URI = process.env.MONGODB_URI;
 var server = app.listen(port, function() {
@@ -9,7 +10,11 @@ var server = app.listen(port, function() {
 });
 
 
-app.use('/users', UserController);
+// var UserController = require('./controllers/userCtrl')
+var AlbumController = require('./controllers/albumCtrl')
+// app.use('/users', UserController);
+app.use('/albums', AlbumController);
+
 
 require('dotenv').config();
 
