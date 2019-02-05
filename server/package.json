@@ -1,0 +1,34 @@
+{
+  "name": "chris-api-server",
+  "version": "1.0.0",
+  "description": "backend of my server",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrispykan/test-api.git"
+  },
+  "keywords": [
+    "server",
+    "side",
+    "backend",
+    "chris",
+    "api"
+  ],
+  "author": "chrispykan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrispykan/test-api/issues"
+  },
+  "homepage": "https://github.com/chrispykan/test-api#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.9",
+    "nodemon": "^1.18.9",
+    "npm": "^6.7.0"
+  }
+}
