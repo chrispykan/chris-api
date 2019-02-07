@@ -1,7 +1,7 @@
 .gitignore
 
 .env
-config.js
+jwtConfig.js
 node_modules
 bundle.js
 npm-debug.log
