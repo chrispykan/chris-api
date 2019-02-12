@@ -3,9 +3,8 @@ var app = express();
 var cors = require('cors');
 var routes = require ('./config/routes');
 var bodyParser = require('body-parser');
-var routes = require ('./config/routes');
-
 var db = require('./models/index');
+var authRouter = require('./config/authRouter');
 
 // CONNECT TO DATABASE
 var port = process.env.PORT || 3001;
@@ -36,7 +35,8 @@ app.get('/reset', function (req, res) {
 });
 
 
-
+// auth routes
+authRouter(app);
 
 // ROUTES
 app.use('/api', routes);

@@ -20,6 +20,9 @@ jwt-simple
 morgan
 cors
 body-parser
+passport
+passport-jwt
+passport-local
 
 
 
