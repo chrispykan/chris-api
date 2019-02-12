@@ -1,15 +1,14 @@
 
-const mongoose = require('mongoose'); 
-const Schema = mongoose.Schema;
-const bcrypt = require('bcrypt-nodejs') 
+var mongoose = require('mongoose'); 
+var Schema = mongoose.Schema;
+var bcrypt = require('bcrypt-nodejs') 
+
 
 const userSchema = new mongoose.Schema({  
   name: String,
   email: {type: String, unique: true, lowercase: true},
   password: String
 });
-
-
 
 // On Save Hook, encrypt password
 
@@ -40,9 +39,6 @@ userSchema.methods.comparePassword = function (candidatePassword, callback) {
     callback(null, isMatch);
   });
 }
-
-
-
 
 
 mongoose.model('User', userSchema);
