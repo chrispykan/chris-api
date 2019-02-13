@@ -14,10 +14,9 @@ const seedAlbums = require('../seeds/albums'),
 router.route('/users')
     .get(ctrl.users.index)
     .post(ctrl.users.create);
+ 
   
-  router.get('/users/nuke', ctrl.users.nuke);
-  
-  router.route('/users/:albumId')
+  router.route('/users/:userId')
     .get(ctrl.users.show)
     .put(ctrl.users.update)
     .delete(ctrl.users.destroy);

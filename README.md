@@ -13,11 +13,12 @@ in third Terminal Tab, navigate to server directory and run
 ##backend technologies
 nodejs
 expressjs
+http
+morgan
 mongodb
 dotenv
 bcrypt-nodejs
 jwt-simple
-morgan
 cors
 body-parser
 passport

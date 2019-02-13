@@ -1,4 +1,6 @@
 var express = require('express');
+var http = require('http');
+var morgan = require('morgan');
 var app = express();
 var cors = require('cors');
 var routes = require ('./config/routes');
@@ -9,12 +11,19 @@ var authRouter = require('./config/authRouter');
 // CONNECT TO DATABASE
 var port = process.env.PORT || 3001;
 var MONGODB_URI = process.env.MONGODB_URI;
-var server = app.listen(port, () => {
+
+const server = http.createServer(app);
+server.listen(port, ()  => {
   console.log(`Express server listening on port ${port}`);
 });
 
+
 // REQUIRE DATABASEB URI
 require('dotenv').config();
+
+
+// 
+// app.use(morgan('combined'));
 
 // configure cors (for allowing cross-origin requests)
 app.use(cors());
@@ -35,7 +44,7 @@ app.get('/reset', function (req, res) {
 });
 
 
-// auth routes
+// sign up/in auth routes
 authRouter(app);
 
 // ROUTES
